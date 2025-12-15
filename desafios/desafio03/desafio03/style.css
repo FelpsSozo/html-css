@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* 2 colunas */
+  gap: 0px;
+  justify-content: center; /* centraliza o grid */
+  margin-top: 0px;
+}
+
+.image-container img {
+  width: 250px; /* ou o tamanho que quiser */
+  height: auto;
+  display: block;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.frase {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.botao-voltar {
+  display: flex;
+  justify-content: center;
+}

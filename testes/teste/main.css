@@ -1,0 +1,33 @@
+body {
+    font: normal 1em Arial, Helvetica, sans-serif;
+}
+
+.teste {
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+
+.teste:visited {
+    color: darkred;
+}
+
+.teste:hover{
+    text-decoration:  underline;
+}
+
+#especial:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+#especial::before {
+    content:'»';
+    font-weight: light;
+}
+
+#especial::after {
+    content:'«';
+    font-weight: light;
+}

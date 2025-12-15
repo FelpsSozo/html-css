@@ -1,0 +1,195 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Modern Thrash Slant Demo';
+    src: url('/CSS/types/Modern\ Thrash\ Slant\ Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'KGPerfectPenmanship';
+    src: url('/CSS/types/KGPerfectPenmanship.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor-primaria: FFF8F8;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #B001F5;
+    --cor-quartaria: #9B22CA;
+    --cor-quintaria: #44324B;
+    --typo-padrao: 'Arial', sans-serif;
+    --typo-titulo: Modern Thrash Slant Demo, sans-serif;
+    --typo-texto: KGPerfectPenmanship, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(212, 212, 212);
+}
+main {
+    display: flex;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor-quartaria), var(--cor-quintaria));
+    padding: 10px;;
+}
+
+header h1 {
+    color: white;
+    font-family: var(--typo-titulo);
+    text-align: center;
+}
+
+header p {
+    color: white;
+    font-family: var(--typo-titulo);
+    text-align: center;
+}
+
+
+.countainer {
+  position: relative;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 10px;
+    width: 200px;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;  
+}
+
+.search-box:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 8px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    font-size: 16px;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.search-box button:hover {
+  color: #000;
+}
+
+
+ 
+.artigo {
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.artigo h2 {
+    font-family: var(--typo-texto);
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
+}
+
+.artigo p {
+    font-family: var(--typo-texto);
+    color: var(--cor-secundaria);
+    line-height: 1.6;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.galeria img {
+    max-width: 50px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* espaço entre os círculos */
+  margin-top: 20px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dot:hover {
+  transform: scale(1.2);
+}
+
+.dot.active {
+  background-color: #000; /* bolinha preenchida */
+}
+
+.sessao2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  padding: 20px;
+  gap: 20px;
+  width: fit-content;     /* ajusta ao tamanho do conteúdo */
+  margin-left: 60%;   
+  margin-top: auto;   /* empurra para a direita */
+  margin-right: 20px; 
+  padding-bottom: 0px;
+}
+
+.sessao2 p {
+    top: 10px;
+    right: 10px;
+    font-family: var(--typo-texto);
+    color: var(--cor-secundaria);
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* distância entre “Rating” e “Dificuldade” */
+  font-family: "Georgia", serif;
+  text-align: center;
+}
+
+.personagem {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
