@@ -21,6 +21,9 @@
             background-color:gray;
             color: white;
         }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
         .num {
             text-align: right;
         }
@@ -32,6 +35,7 @@
     
     ANATOMIA PARA TABELAS GRANDES
         TABLE (TABELA)
+            CAPTION (TÍTULO/LEGENDA)
             THEAD (CABEÇA DA TABELA)
                 TR, TD, TH
             TBODY (CORPO DA TABELA)
@@ -41,10 +45,11 @@
      -->
     
      <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
 
             </tr>
         </thead>
@@ -61,10 +66,38 @@
                 <td>Rio de Janeiro</td>
                 <td class="num"> 16.765.123</td>
             </tr>
+            <tr>
+                <td>Goiânia</td>
+                <td class="num"> 15.765.123</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num"> 14.765.123</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num"> 13.765.123</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num"> 12.765.123</td>
+            </tr>
+            <tr>
+                <td>Lins</td>
+                <td class="num"> 11.765.123</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num"> 10.765.123</td>
+            </tr>
+            <tr>
+                <td>Ipanema</td>
+                <td class="num"> 9.765.123</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th> Total de Habitantes</th>
+                <th scope="row"> Total de Habitantes</th>
                 <td class="num"><strong>Número total aqui</strong></td>
             </tr>
         </tfoot>
